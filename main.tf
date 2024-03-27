@@ -80,7 +80,7 @@ resource "aws_lambda_function" "my_lambda_funtion" {
   role          = "arn:aws:iam::411755664422:role/lambda_role"
   handler       = "lambda_function.lambda_handler"
 
-  runtime = "provided.al2"    #Use "provideral2" for custom runtime like Docker
+  #runtime = "provided.al2"    #Use "provideral2" for custom runtime like Docker
 
   image_uri = "411755664422.dkr.ecr.ap-south-1.amazonaws.com/my-new-repo:latest"
 
